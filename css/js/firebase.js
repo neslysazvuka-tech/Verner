@@ -1,5 +1,5 @@
-import { initializeApp } from "https://www.gstatic.com/firebasejs/9.6.0/firebase-app.js";
-import { getDatabase, ref, set, push, onChildAdded, onValue, remove, off } from "https://www.gstatic.com/firebasejs/9.6.0/firebase-database.js";
+import { initializeApp } from "firebase/app";
+import { getDatabase, ref, set, push, onChildAdded, onValue, remove, off } from "firebase/database";
 
 const firebaseConfig = {
   apiKey: "AIzaSyAjrBXw1ACyd-b8I5OrI4gkxCfjrFrRs_Q",
@@ -11,7 +11,12 @@ const firebaseConfig = {
   appId: "1:38981770435:web:e4a55a523f14243d551676"
 };
 
+// Инициализация Firebase
 const app = initializeApp(firebaseConfig);
 const database = getDatabase(app);
+
+// Проверка инициализации
+console.log("Firebase инициализирован:", app.name);
+console.log("База данных подключена:", database.app.name);
 
 export { database, ref, set, push, onChildAdded, onValue, remove, off };
