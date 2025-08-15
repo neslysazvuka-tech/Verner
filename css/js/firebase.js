@@ -8,7 +8,7 @@ const firebaseConfig = {
   projectId: "realtime-multiplayer-93582",
   storageBucket: "realtime-multiplayer-93582.firebasestorage.app",
   messagingSenderId: "38981770435",
-  appId: "1:38981770435:web:b9e89a3b3e524169551676"
+  appId: "1:38981770435:web:e4a55a523f14243d551676"
 };
 
 const app = initializeApp(firebaseConfig);
